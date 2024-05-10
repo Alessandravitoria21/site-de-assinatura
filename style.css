@@ -10,6 +10,8 @@ body  {
      background-color: var(--cor-de-fundo);
     color:var(--branco-principal);
     font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight:400 ;
 }
 
  *{
@@ -19,9 +21,9 @@ body  {
 
  .principal{
      background-image: url("Img/Background.png");
-
-
-    }   background-repeat: no-repeat;
+     background-repeat: no-repeat;
+     background-size: contain;
+    }   background-repeat no-repeat 
 
  .container {
      height: 100vh;
@@ -29,9 +31,26 @@ body  {
      grid-template-colum:33% 33% 33%
 }
 
-.container__botão  
+.container__botão  {
     background-color: var(--botao-azul);
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
-            diplay: block; 
+    diplay: block; 
+    text-decoration: none;
+ }
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario)
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
